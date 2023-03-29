@@ -11,6 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/WebXR Interactions/0.16.3-preview/Sample Scene/Scenes/Desert.unity
     guid: 85380d4847db7b74a850284461349c36
+  - enabled: 0
+    path: Assets/Scenes/GameScene.unity
+    guid: 977ee3473ac032542bef99fd6dd099aa
   m_configObjects:
     WebXR.Settings: {fileID: 11400000, guid: e291145dc321dfe40823e399605119c5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b1ab2b797bce0f54bb1d2f31387d18e5, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: fc521033893c23f47bea7eadc0cca8a1, type: 2}
