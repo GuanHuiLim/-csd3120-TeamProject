@@ -99,6 +99,15 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.inputsystem": {
+      "version": "1.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.mathematics": {
       "version": "1.2.6",
       "depth": 1,
@@ -229,7 +238,7 @@
     },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.10",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.vr": "1.0.0",
@@ -250,12 +259,33 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.openxr": {
+      "version": "1.6.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.management": "4.0.1",
+        "com.unity.xr.legacyinputhelpers": "2.1.2",
+        "com.unity.inputsystem": "1.4.4"
+      },
+      "url": "https://packages.unity.com"
+    },
     "io.extendreality.tilia.camerarigs.trackedalias.unity": {
       "version": "2.1.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "io.extendreality.zinnia.unity": "2.7.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "io.extendreality.tilia.camerarigs.xrpluginframework.unity": {
+      "version": "2.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "io.extendreality.zinnia.unity": "2.9.0",
+        "com.unity.xr.management": "4.0.1"
       },
       "url": "https://registry.npmjs.org"
     },
@@ -276,6 +306,16 @@
       "source": "registry",
       "dependencies": {
         "io.extendreality.zinnia.unity": "2.7.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "io.extendreality.tilia.input.unityinputsystem": {
+      "version": "2.4.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "io.extendreality.zinnia.unity": "2.9.0",
+        "com.unity.inputsystem": "1.5.0"
       },
       "url": "https://registry.npmjs.org"
     },
@@ -326,7 +366,7 @@
       "url": "https://registry.npmjs.org"
     },
     "io.extendreality.zinnia.unity": {
-      "version": "2.7.2",
+      "version": "2.9.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

@@ -44,4 +44,41 @@ public class GameController : MonoBehaviour
     {
         cut_sound.Play();
     }
+
+    static public void LeftControllerX_Axis_Moved(bool activate)
+    {
+        if (activate)
+            Debug.Log("LeftControllerX_Axis_Moved: " + "ACTIVATED");
+        else
+            Debug.Log("LeftControllerX_Axis_Moved: " + "DE-ACTIVATED");
+    }
+
+    static public void LeftControllerY_Axis_Moved(bool activate)
+    {
+        if (activate)
+            Debug.Log("LeftControllerY_Axis_Moved: " + "ACTIVATED");
+        else
+            Debug.Log("LeftControllerY_Axis_Moved: " + "DE-ACTIVATED");
+    }
+
+    static public void LeftController_Axis_Moved(bool activate)
+    {
+        if (activate)
+            Debug.Log("LeftController_Axis_Moved: " + "ACTIVATED");
+        else
+            Debug.Log("LeftController_Axis_Moved: " + "DE-ACTIVATED");
+    }
+
+    static public void LeftHandThumb(bool activate)
+    {
+        if (activate)
+            Debug.Log("LeftHandThumb: " + "ACTIVATED");
+        else
+            Debug.Log("LeftHandThumb: " + "DE-ACTIVATED");
+    }
+
+    static public void Moving()
+    {
+        Debug.Log("Moving");
+    }
 }
