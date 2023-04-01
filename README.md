@@ -48,7 +48,7 @@ Using the Meta-Quest 2 as the targetted device, below are the control scheme for
 ***Interactions*** 
 - `Left/Right Grip button` Hold down to interact and pick up and hold onto the katana sword 
 - `SWING while holding Grip button`Swing the katana while its in your hands to slash the surrounding objects that are shot at you. 
-- `Hold down Left and Right Trigguer button`Activates Blade Mode, in this mode time is drastically slowed down. 
+- `Hold down Left and Right Trigger button`Activates Blade Mode, in this mode time is drastically slowed down. 
 
 ## 📁Directories
 
