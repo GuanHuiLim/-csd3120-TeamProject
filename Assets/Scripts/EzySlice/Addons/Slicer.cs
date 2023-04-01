@@ -19,10 +19,10 @@ public class Slicer : MonoBehaviour
             //Debug.Log("objectsToBeSliced num = " + objectsToBeSliced.Length.ToString());
             foreach (Collider objectToBeSliced in objectsToBeSliced)
             {
-                if (objectToBeSliced.gameObject.CompareTag("Sliceable") == false)
-                {
-                    continue;
-                }
+                //if (objectToBeSliced.gameObject.CompareTag("Sliceable") == false)
+                //{
+                //    continue;
+                //}
                 //Debug.Log("objectToBeSliced procesing");
                 Material replacementMaterial = objectToBeSliced.gameObject.GetComponent<Renderer>().material;
                 bool useGravity = objectToBeSliced.gameObject.GetComponent<Rigidbody>().useGravity;
@@ -70,7 +70,7 @@ public class Slicer : MonoBehaviour
         if (obj.TryGetComponent<Rigidbody>(out Rigidbody rb) == false)
             rb = obj.AddComponent<Rigidbody>();
         rb.useGravity = useGravity;
-        rb.AddExplosionForce(130, obj.transform.position, 10);
+        rb.AddExplosionForce(150, obj.transform.position, 10);
         //obj.tag = "Sliceable";
 
         if (obj.TryGetComponent<DestroyedPieceLogic>(out DestroyedPieceLogic destroyedPieceLogic) == false)

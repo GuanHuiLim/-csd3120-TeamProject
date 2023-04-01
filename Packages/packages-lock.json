@@ -10,13 +10,12 @@
       "url": "https://package.openupm.com"
     },
     "com.de-panther.webxr-interactions": {
-      "version": "0.16.3-preview",
+      "version": "file:com.de-panther.webxr-interactions@0.16.3-preview",
       "depth": 0,
-      "source": "registry",
+      "source": "embedded",
       "dependencies": {
         "com.de-panther.webxr": "0.16.0-preview"
-      },
-      "url": "https://package.openupm.com"
+      }
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

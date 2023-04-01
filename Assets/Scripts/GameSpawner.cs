@@ -36,16 +36,10 @@ public class GameSpawner : MonoBehaviour
         // Apply the launch force and spin force to the object.
         Rigidbody rb = newObject.GetComponent<Rigidbody>();
         rb.AddForce(launchDirection * spawnForce, ForceMode.Impulse);
-        rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
-        //// Calculate the direction to launch the object towards the player.
-        //Vector3 forwardDirection = transform.forward;
-        //Vector3 targetDirection = (playerTransform.position - startingTransform.position).normalized;
-        //Vector3 launchDirection = Vector3.Slerp(forwardDirection, targetDirection, 0.5f).normalized;
-
-        //// Apply the launch force and spin force to the object.
-        //Rigidbody rb = newObject.GetComponent<Rigidbody>();
-        //rb.AddForce(targetDirection * spawnForce, ForceMode.Impulse);
         //rb.AddTorque(Random.insideUnitSphere * spinForce, ForceMode.Impulse);
+        //Vector3 torque = Vector3.up * spinForce * newObject.transform.localScale.magnitude;
+        //rb.AddTorque(torque, ForceMode.Impulse);
+        rb.angularVelocity = Random.insideUnitSphere * spinForce;
     }
 
     private void InitializeObject(GameObject obj)
@@ -59,6 +53,6 @@ public class GameSpawner : MonoBehaviour
             temp = obj.AddComponent<DeleteAfter5Seconds>();
 
         obj.tag = "Sliceable";
-
+        obj.layer = 6;
     }
 }

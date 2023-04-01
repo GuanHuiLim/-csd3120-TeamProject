@@ -8,12 +8,14 @@ public class DestroyedPieceLogic : MonoBehaviour
 
     private void Start()
     {
-        Invoke("ChangeTag", delay);
+        Invoke("EnableToBeCut", delay);
     }
 
-    private void ChangeTag()
+    private void EnableToBeCut()
     {
         gameObject.tag = "Sliceable";
+        gameObject.layer = 6;
+
     }
 
 }
