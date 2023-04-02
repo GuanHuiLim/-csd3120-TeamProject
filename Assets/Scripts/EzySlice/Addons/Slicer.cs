@@ -23,18 +23,19 @@ public class Slicer : MonoBehaviour
                 //{
                 //    continue;
                 //}
-                //Debug.Log("objectToBeSliced procesing");
+                Debug.Log("objectToBeSliced procesing");
                 Material replacementMaterial = objectToBeSliced.gameObject.GetComponent<Renderer>().material;
                 bool useGravity = objectToBeSliced.gameObject.GetComponent<Rigidbody>().useGravity;
+                Vector3 initial_velocity = objectToBeSliced.gameObject.GetComponent<Rigidbody>().velocity;
 
                 SlicedHull slicedObject = SliceObject(objectToBeSliced.gameObject, replacementMaterial);
                 GameController.AddScore(10);
-                GameController.sword_cut_event.Invoke();
                 if (slicedObject == null)
                 {
-                    //Debug.Log("slicedObject == null");
+                    Debug.Log("slicedObject == null");
                     continue;
                 }
+                GameController.sword_cut_event.Invoke();
                 GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, replacementMaterial);
                 if (upperHullGameobject == null)
                     Debug.Log("upperHullGameobject == null");
@@ -46,15 +47,17 @@ public class Slicer : MonoBehaviour
                 upperHullGameobject.transform.position = objectToBeSliced.transform.position;
                 lowerHullGameobject.transform.position = objectToBeSliced.transform.position;
 
-                MakeItPhysical(upperHullGameobject, useGravity);
-                MakeItPhysical(lowerHullGameobject, useGravity);
+                MakeItPhysical(upperHullGameobject, useGravity,initial_velocity);
+                MakeItPhysical(lowerHullGameobject, useGravity, initial_velocity);
 
                 Destroy(objectToBeSliced.gameObject);
+
+                Debug.Log("Sliced object!!!");
             }
         }
     }
 
-    private void MakeItPhysical(GameObject obj, bool useGravity)
+    private void MakeItPhysical(GameObject obj, bool useGravity, Vector3 velocity)
     {
         if (obj.TryGetComponent<MeshFilter>(out MeshFilter mesh_filter) == false)
         {
@@ -70,7 +73,8 @@ public class Slicer : MonoBehaviour
         if (obj.TryGetComponent<Rigidbody>(out Rigidbody rb) == false)
             rb = obj.AddComponent<Rigidbody>();
         rb.useGravity = useGravity;
-        rb.AddExplosionForce(150, obj.transform.position, 10);
+        //rb.AddForce(velocity * 0.4f,ForceMode.Impulse);
+        rb.AddExplosionForce(4, obj.transform.position, 10,0.0f, ForceMode.Impulse);
         //obj.tag = "Sliceable";
 
         if (obj.TryGetComponent<DestroyedPieceLogic>(out DestroyedPieceLogic destroyedPieceLogic) == false)
