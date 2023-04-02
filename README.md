@@ -1,7 +1,3 @@
-# README
-
-# README
-
 # 👓CSD3120-2023-Team Project
 
 Team Project Assignment for csd3120-2023 [“Introduction to Virtual Reality”]
@@ -18,7 +14,9 @@ Team Project Assignment for csd3120-2023 [“Introduction to Virtual Reality”]
 
 ## 🗡️Try It Now!
 
-The Project is hosted on [itch.io](http://itch.io) for you to try! Grab your VR headset and experience it yourself [here](https://coltcustom.itch.io/webxr-game). The password for the itch.io is “webXR”.
+The Project is hosted on [itch.io](http://itch.io) for you to try! Grab your VR headset and experience it yourself [here](https://coltcustom.itch.io/webxr-game). 
+The password for the itch.io is ```webXR```.
+
 The original project before improvements can be played [here](https://guanhuilim.github.io/csd3120-TeamProject/)
 
 ## 📃Brief
@@ -45,9 +43,14 @@ Using the Meta-Quest 2 as the targetted device, below are the control scheme for
 
 **Note** Other devices should be supported but the mapping of the buttons *might be different*!
 
-***Movement(Locomotion)*** - `Left Thumbstick` to move - `Right Thumbstick` press down to aim and release to Teleport to location (Teleport)
+***Movement(Locomotion)*** 
+- `Left Thumbstick` to move 
+- `Right Thumbstick` press down to aim and release to Teleport to location (Teleport)
 
-***Interactions*** - `Left/Right Grip button` Hold down to interact and pick up and hold onto the katana sword - `SWING while holding Grip button`Swing the katana while its in your hands to slash the surrounding objects that are shot at you. - `Hold down Left and Right Trigger button`Activates Blade Mode, in this mode time is drastically slowed down.
+***Interactions*** 
+- `Left/Right Grip button` Hold down to interact and pick up and hold onto the katana sword 
+- `SWING while holding Grip button`Swing the katana while its in your hands to slash the surrounding objects that are shot at you. 
+- `Hold down Left and Right Trigger button`Activates Blade Mode, in this mode time is drastically slowed down.
 
 ## 📁Directories
 
