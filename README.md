@@ -63,7 +63,7 @@ Majority of the custom work such as assets, prefabs, textures, models etc can be
 
 ## 🎥App Video Demo
 
-https://user-images.githubusercontent.com/10570064/229451527-cd95d6bd-cc7a-4b36-8ecb-db7d529cb949.mp4
+https://user-images.githubusercontent.com/10570064/229472460-34037a16-e820-4fb1-851c-08b68996d3c6.mp4
 
 ## 🎬Design Video Explanation
 
