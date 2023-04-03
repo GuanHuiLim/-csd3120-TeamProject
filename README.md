@@ -59,6 +59,7 @@ This Project’s root directory contains all folders required for Unity to load 
 Majority of the custom work such as assets, prefabs, textures, models etc can be found in the the `Assets` directory The unity scene of our interest is located currently at `Assets\LSamples\WebXR Interactions\0.16.3-preview\Sample Scene\Scenes\Desert.unity`
 
 ## 📷Screenshot
+![VR-SS](https://user-images.githubusercontent.com/10570064/229445612-bec5733a-69de-4bc2-83be-2aa0ed525fc7.png)
 
 ## 🎥App Video Demo
 
